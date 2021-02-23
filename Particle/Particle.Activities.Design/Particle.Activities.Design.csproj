@@ -9,14 +9,14 @@
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>this package provide a particle star</Description>
+    <Description>this package provide a particle effect in your desktop.</Description>
     <Authors>Masaaki Yoshida</Authors>
     <Company>Masaaki Yoshida</Company>
     <Copyright>© 2021 Masaaki Yoshida</Copyright>
     <PackageTags>UiPath Activit𝗒 Particle</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
-    <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
+    <PackageProjectUrl>https://github.com/myoshidan/Particle.Activities</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/myoshidan/Particle.Activities/main/Resource/packageIcon.png</PackageIconUrl>
+    <!--<PackageIcon>packageIcon.png</PackageIcon>-->  <!--PackageIcon not yet supported in UiPath Studio-->
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -24,15 +24,15 @@
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug' AND '$(DesignTimeBuild)' != 'true'">
-    <PackageVersion>0.1.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
+    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\HiddenParticleDesigner.xaml" />
     <None Remove="Designers\ParticalScopeDesigner.xaml" />
-    <None Remove="Designers\ShowParticleDesigner.xaml" />
+    <None Remove="Designers\ShowParticleDesigner.xaml" />    
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
