@@ -33,7 +33,7 @@ namespace Particle.Activities
         [LocalizedCategory(nameof(Resources.Common_Category))]
         [LocalizedDisplayName(nameof(Resources.Timeout_DisplayName))]
         [LocalizedDescription(nameof(Resources.Timeout_Description))]
-        public InArgument<int> TimeoutMS { get; set; } = 60000;
+        public InArgument<int> TimeoutMS { get; set; }
 
         // A tag used to identify the scope in the activity context
         internal static string ParentContainerPropertyTag => "ScopeActivity";

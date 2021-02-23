@@ -29,17 +29,17 @@ namespace Particle.Activities
         [LocalizedCategory(nameof(Resources.Common_Category))]
         [LocalizedDisplayName(nameof(Resources.Timeout_DisplayName))]
         [LocalizedDescription(nameof(Resources.Timeout_Description))]
-        public InArgument<int> TimeoutMS { get; set; } = 60000;
+        public InArgument<int> TimeoutMS { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ParticalScope_ParticalType_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ParticalScope_ParticalType_Description))]
+        [LocalizedDisplayName(nameof(Resources.ShowParticle_ParticalType_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ShowParticle_ParticalType_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         [TypeConverter(typeof(EnumNameConverter<ParticleType>))]
         public ParticleType ParticalType { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ParticalScope_AutoHiddenTime_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ParticalScope_AutoHiddenTime_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
+        [LocalizedDisplayName(nameof(Resources.ShowParticle_AutoHiddenTime_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ShowParticle_AutoHiddenTime_Description))]
+        [LocalizedCategory(nameof(Resources.Options_Category))]
         public InArgument<TimeSpan> AutoHiddenTime { get; set; }
 
         #endregion
