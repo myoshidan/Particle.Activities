@@ -117,104 +117,104 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Authentication_Category" xml:space="preserve">
+    <value>認証</value>
+    <comment>category</comment>
+  </data>
+  <data name="Common_Category" xml:space="preserve">
+    <value>共通</value>
+    <comment>category</comment>
+  </data>
   <data name="ContinueOnError_Description" xml:space="preserve">
-    <value>If set, continue executing the remaining activities even if the current activity has failed.</value>
+    <value>現在のアクティビティが失敗したときに残りのアクティビティの実行を継続するかどうかを指定します。Boolean値（True、False）のみをサポートします。</value>
     <comment>property description</comment>
   </data>
   <data name="ContinueOnError_DisplayName" xml:space="preserve">
-    <value>ContinueOnError</value>
+    <value>エラー発生時に実行を継続</value>
     <comment>property name</comment>
-  </data>
-  <data name="Timeout_Description" xml:space="preserve">
-    <value>Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute).</value>
-    <comment>property description</comment>
-  </data>
-  <data name="Timeout_DisplayName" xml:space="preserve">
-    <value>Timeout (milliseconds)</value>
-    <comment>property name</comment>
-  </data>
-  <data name="Timeout_Error" xml:space="preserve">
-    <value>The activity timed out and was canceled.</value>
-    <comment>error message</comment>
   </data>
   <data name="Do" xml:space="preserve">
-    <value>Do</value>
+    <value>実行</value>
     <comment>generic</comment>
   </data>
-  <data name="Common_Category" xml:space="preserve">
-    <value>Common</value>
-    <comment>category</comment>
-  </data>
-  <data name="Authentication_Category" xml:space="preserve">
-    <value>Authentication</value>
-    <comment>category</comment>
-  </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
-  </data>
-  <data name="Options_Category" xml:space="preserve">
-    <value>Options</value>
-    <comment>category</comment>
-  </data>
-  <data name="ValidationScope_Error" xml:space="preserve">
-    <value>Cannot be used outside of a {0}.</value>
-    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
-  </data>
-  <data name="ValidationValue_Error" xml:space="preserve">
-    <value>Please provide a value for {0}.</value>
-    <comment>error message; {0} is the name of a missing property</comment>
-  </data>
-  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
-    <value>Please provide a value either for {0} or {1}, but not both.</value>
-    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
-  </data>
-  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
-    <value>Please provide values for both {0} and {1}.</value>
-    <comment>error message; {0} &amp; {1} are complementary properties</comment>
-  </data>
-  <data name="ParticalScope_DisplayName" xml:space="preserve">
-    <value>Partical Scope</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="ParticalScope_Description" xml:space="preserve">
-    <value>Scope for displaying particles.</value>
-    <comment>activity description</comment>
-  </data>
-  <data name="ShowParticle_ParticalType_DisplayName" xml:space="preserve">
-    <value>Partical Type</value>
-    <comment>property name</comment>
-  </data>
-  <data name="ShowParticle_ParticalType_Description" xml:space="preserve">
-    <value>Select the particle type</value>
-    <comment>property description</comment>
-  </data>
-  <data name="ShowParticle_AutoHiddenTime_DisplayName" xml:space="preserve">
-    <value>Auto Hidden Time</value>
-    <comment>property name</comment>
-  </data>
-  <data name="ShowParticle_AutoHiddenTime_Description" xml:space="preserve">
-    <value>Set the time for automatic particle removal.</value>
-    <comment>property description</comment>
-  </data>
-  <data name="ShowParticle_DisplayName" xml:space="preserve">
-    <value>Show Particle</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="ShowParticle_Description" xml:space="preserve">
-    <value>Displays particles on the screen.</value>
+  <data name="HiddenParticle_Description" xml:space="preserve">
+    <value>画面上のパーティクルを消去します</value>
     <comment>activity description</comment>
   </data>
   <data name="HiddenParticle_DisplayName" xml:space="preserve">
-    <value>Hidden Particle</value>
+    <value>パーティクルを消去</value>
     <comment>activity name</comment>
   </data>
-  <data name="HiddenParticle_Description" xml:space="preserve">
-    <value>Clear particles placed on the screen.</value>
+  <data name="Input_Category" xml:space="preserve">
+    <value>入力</value>
+    <comment>category</comment>
+  </data>
+  <data name="Options_Category" xml:space="preserve">
+    <value>オプション</value>
+    <comment>category</comment>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>出力</value>
+    <comment>category</comment>
+  </data>
+  <data name="ParticalScope_Description" xml:space="preserve">
+    <value>パーティクルスコープアクティビティ</value>
     <comment>activity description</comment>
+  </data>
+  <data name="ParticalScope_DisplayName" xml:space="preserve">
+    <value>パーティクルスコープ</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="ShowParticle_AutoHiddenTime_Description" xml:space="preserve">
+    <value>パーティクルを自動で消去する時間を設定することができます</value>
+    <comment>property description</comment>
+  </data>
+  <data name="ShowParticle_AutoHiddenTime_DisplayName" xml:space="preserve">
+    <value>パーティクル自動消去時間</value>
+    <comment>property name</comment>
+  </data>
+  <data name="ShowParticle_Description" xml:space="preserve">
+    <value>パーティクルを画面に表示します</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="ShowParticle_DisplayName" xml:space="preserve">
+    <value>パーティクルを表示</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="ShowParticle_ParticalType_Description" xml:space="preserve">
+    <value>パーティクルの種類を選択します</value>
+    <comment>property description</comment>
+  </data>
+  <data name="ShowParticle_ParticalType_DisplayName" xml:space="preserve">
+    <value>パーティクルタイプ</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Timeout_Description" xml:space="preserve">
+    <value>アクティビティの実行が完了するまで待機する時間をミリ秒で指定します</value>
+    <comment>property description</comment>
+  </data>
+  <data name="Timeout_DisplayName" xml:space="preserve">
+    <value>タイムアウト時間(ミリ秒)</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Timeout_Error" xml:space="preserve">
+    <value>アクティビティはタイムアウトし、キャンセルされました。</value>
+    <comment>error message</comment>
+  </data>
+  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
+    <value>{0}または{1}のどちらか一方の値を指定してください。両方を指定することはできません。</value>
+    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
+  </data>
+  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
+    <value>{0}と{1}両方に値を入力してください。</value>
+    <comment>error message; {0} &amp; {1} are complementary properties</comment>
+  </data>
+  <data name="ValidationScope_Error" xml:space="preserve">
+    <value>{0}の外では使用できません。</value>
+    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
+  </data>
+  <data name="ValidationValue_Error" xml:space="preserve">
+    <value>{0}の値を入力してください。</value>
+    <comment>error message; {0} is the name of a missing property</comment>
   </data>
 </root>

@@ -106,7 +106,7 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Clear particles placed on the screen. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string HiddenParticle_Description {
             get {
@@ -115,7 +115,7 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///   HiddenParticle に類似しているローカライズされた文字列を検索します。
+        ///   Hidden Particle に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string HiddenParticle_DisplayName {
             get {
@@ -151,25 +151,7 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string ParticalScope_AutoHiddenTime_Description {
-            get {
-                return ResourceManager.GetString("ParticalScope_AutoHiddenTime_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   AutoHiddenTime に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string ParticalScope_AutoHiddenTime_DisplayName {
-            get {
-                return ResourceManager.GetString("ParticalScope_AutoHiddenTime_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Scope for displaying particles. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ParticalScope_Description {
             get {
@@ -178,7 +160,7 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///   ParticalScope に類似しているローカライズされた文字列を検索します。
+        ///   Partical Scope に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ParticalScope_DisplayName {
             get {
@@ -187,25 +169,25 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Set the time for automatic particle removal. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ParticalScope_ParticalType_Description {
+        public static string ShowParticle_AutoHiddenTime_Description {
             get {
-                return ResourceManager.GetString("ParticalScope_ParticalType_Description", resourceCulture);
+                return ResourceManager.GetString("ShowParticle_AutoHiddenTime_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   ParticalType に類似しているローカライズされた文字列を検索します。
+        ///   Auto Hidden Time に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ParticalScope_ParticalType_DisplayName {
+        public static string ShowParticle_AutoHiddenTime_DisplayName {
             get {
-                return ResourceManager.GetString("ParticalScope_ParticalType_DisplayName", resourceCulture);
+                return ResourceManager.GetString("ShowParticle_AutoHiddenTime_DisplayName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Displays particles on the screen. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ShowParticle_Description {
             get {
@@ -214,11 +196,29 @@ namespace Particle.Activities.Properties {
         }
         
         /// <summary>
-        ///   ShowParticle に類似しているローカライズされた文字列を検索します。
+        ///   Show Particle に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ShowParticle_DisplayName {
             get {
                 return ResourceManager.GetString("ShowParticle_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Select the particle type に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ShowParticle_ParticalType_Description {
+            get {
+                return ResourceManager.GetString("ShowParticle_ParticalType_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Partical Type に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ShowParticle_ParticalType_DisplayName {
+            get {
+                return ResourceManager.GetString("ShowParticle_ParticalType_DisplayName", resourceCulture);
             }
         }
         
