@@ -39,7 +39,8 @@
                 Content="FPS: 0"
                 DockPanel.Dock="Top"
                 Foreground="Yellow"
-                Visibility="Visible" />
+                Visibility="Collapsed" />
+
         </DockPanel>
     </Grid>
 </Window>
