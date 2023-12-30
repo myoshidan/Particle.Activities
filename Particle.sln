@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Particle", "Particle", "{97B64117-E9C9-4D70-A805-58252D0F3876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle", "Particle\Particle\Particle.csproj", "{044E979E-9C71-45A3-88DF-236CD65ABA8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Particle", "Particle\Particle\Particle.csproj", "{044E979E-9C71-45A3-88DF-236CD65ABA8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle.Activities", "Particle\Particle.Activities\Particle.Activities.csproj", "{F034C2E0-7C95-4B91-88BF-D1EAFB6A70E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Particle.Activities", "Particle\Particle.Activities\Particle.Activities.csproj", "{F034C2E0-7C95-4B91-88BF-D1EAFB6A70E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle.Activities.Design", "Particle\Particle.Activities.Design\Particle.Activities.Design.csproj", "{EB610E1B-4589-4B0F-89A1-FCDB7367FF11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Particle.Activities.Design", "Particle\Particle.Activities.Design\Particle.Activities.Design.csproj", "{EB610E1B-4589-4B0F-89A1-FCDB7367FF11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7EB8F9AB-1A12-4F6B-9D6A-3B11E00ABA14}"
 EndProject
@@ -18,10 +18,6 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
-		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -52,5 +48,11 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B234111F-4987-4BC3-A0D8-D96CE67C2815}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{eb610e1b-4589-4b0f-89a1-fcdb7367ff11}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{f034c2e0-7c95-4b91-88bf-d1eafb6a70e2}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

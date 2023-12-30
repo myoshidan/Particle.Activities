@@ -1,6 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net461</TargetFrameworks>
+    <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
 		<RootNamespace>Particle.Activities.Design</RootNamespace>
 		<AssemblyName>Particle.Activities.Design</AssemblyName>
     <PackageId>Particle.Activities</PackageId>
@@ -12,7 +14,7 @@
     <Description>this package provide a particle effect in your desktop.</Description>
     <Authors>Masaaki Yoshida</Authors>
     <Company>Masaaki Yoshida</Company>
-    <Copyright>© 2021 Masaaki Yoshida</Copyright>
+    <Copyright>© 2024 Masaaki Yoshida</Copyright>
     <PackageTags>UiPath Activit𝗒 Particle</PackageTags>
     <PackageProjectUrl>https://github.com/myoshidan/Particle.Activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/myoshidan/Particle.Activities/main/Resource/packageIcon.png</PackageIconUrl>
@@ -24,10 +26,10 @@
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug' AND '$(DesignTimeBuild)' != 'true'">
-    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
+    <PackageVersion>2.0.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\HiddenParticleDesigner.xaml" />
@@ -57,21 +59,17 @@
     <DocumentationFile>bin\$(Configuration)\Particle.Activities.Design.xml</DocumentationFile>
     <Product>Particle.Activities</Product>
   </PropertyGroup>
-	<ItemGroup>
-		<Reference Include="System" />
-    <Reference Include="System.Core" />
-		<Reference Include="System.Xml.Linq" />
-		<Reference Include="System.Data.DataSetExtensions" />
-		<Reference Include="Microsoft.CSharp" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-		<Reference Include="System.Data" />
-		<Reference Include="System.Xml" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461' ">
     <Reference Include="System.Activities" />
-    <Reference Include="System.Activities.Presentation" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="WindowsBase" />
     <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="UiPath.Platform" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' != 'net461' ">
+    <PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
+    <PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
+    <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
+    <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
